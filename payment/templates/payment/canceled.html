@@ -1,0 +1,15 @@
+<!--{% extends "shop/base.html" %}-->
+<!--{% block title %}Payment canceled{% endblock %}-->
+<!--{% block content %}-->
+<!--  <h1>Your payment has not been processed</h1>-->
+<!--  <p>There was a problem processing your payment.</p>-->
+<!--{% endblock %}-->
+{% extends 'shop/base.html' %}
+{% load i18n %}
+
+{% block title %}{% trans "Payment successful" %}{% endblock %}
+
+{% block content %}
+  <h1>{% trans "Your payment was successful" %}</h1>
+  <p>{% trans "Your payment has been processed successfully." %}</p>
+{% endblock %}
